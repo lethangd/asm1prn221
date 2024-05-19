@@ -1,6 +1,10 @@
-﻿using BusinessObject;
-using BusinessObject.Models;
+﻿using BusinessObject.Models;
+using DataAccess;
 using DataAccess.Repository;
+using Microsoft.Extensions.Configuration;
+using System.Configuration;
+using System.Diagnostics.Metrics;
+using System.IO;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -26,6 +30,45 @@ namespace MyStoreWPFApp
 
 		private void NavigateToHome(object sender, RoutedEventArgs e)
 		{
+			string username = txtUsername.Text;
+			string password = txtPassword.Password;
+			var configuration = new ConfigurationBuilder()
+				.SetBasePath(Directory.GetCurrentDirectory())
+				.AddJsonFile("appsettings.json")
+				.Build();
+			List<Staff> accounts = configuration.GetSection("Admin").Get<List<Staff>>();
+
+			foreach (Staff acc in accounts)
+			{
+				if (acc.Name.Equals(username) && acc.Password.Equals(password))
+				{
+					AdminDashboard adminDashboard = new AdminDashboard();
+					adminDashboard.Show();
+					this.Hide();
+					return;
+				}
+			}
+
+			StaffDAO staffDAO = new StaffDAO();
+			Staff staff = staffDAO.GetStaffLogin(username, password);
+
+			if (staff != null && staff.Role > 0)
+			{
+				StaffDashboard staffDashboard = new StaffDashboard {Staff = staff };
+				staffDashboard.Show();
+				this.Hide();
+			}
+			else if (staff != null && staff.Role == 0)
+			{
+				AdminDashboard adminDashboard = new AdminDashboard();
+				adminDashboard.Show();
+				this.Hide();
+			}
+			else
+			{
+				MessageBox.Show("Invalid username or password.", "Login Failed", MessageBoxButton.OK, MessageBoxImage.Error);
+			}
 		}
+
 	}
 }

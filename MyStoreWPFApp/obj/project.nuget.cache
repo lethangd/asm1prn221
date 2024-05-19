@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4rKibkBWA96Rq8OMXZFwYhVcy0EDF0HsdNSCkkD9t85XK+SZKMFJl/PEMfwgdTnv+KoMZ+KOmv9lziI+yE7bXA==",
+  "dgSpecHash": "dqQn3kr3eXPi+OLGFchbhdXLug7vda6KrZflG6xquzoktqEXjPZNxHEvbw/JPmG7QbgjxwNzPUgqdNuB1eLAeA==",
   "success": true,
   "projectFilePath": "D:\\C# workspace\\clone\\asm1prn221\\MyStoreWPFApp\\MyStoreWPFApp.csproj",
   "expectedPackageFiles": [
@@ -16,6 +16,7 @@
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.configuration.binder\\8.0.1\\microsoft.extensions.configuration.binder.8.0.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\8.0.0\\microsoft.extensions.configuration.fileextensions.8.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.configuration.json\\8.0.0\\microsoft.extensions.configuration.json.8.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.1\\microsoft.extensions.dependencyinjection.6.0.1.nupkg.sha512",

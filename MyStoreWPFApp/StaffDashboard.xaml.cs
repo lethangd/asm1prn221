@@ -22,7 +22,7 @@ namespace MyStoreWPFApp
     public partial class StaffDashboard : Window
     {
 		public Staff Staff { get; set; }
-		public StaffDashboard(Staff Staff)
+		public StaffDashboard()
         {
             InitializeComponent();
 			MainFrame.Navigate(new HomePage());

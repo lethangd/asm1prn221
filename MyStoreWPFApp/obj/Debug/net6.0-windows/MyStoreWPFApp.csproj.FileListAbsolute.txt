@@ -160,3 +160,4 @@ D:\C# workspace\clone\asm1prn221\MyStoreWPFApp\obj\Debug\net6.0-windows\MyStoreW
 D:\C# workspace\clone\asm1prn221\MyStoreWPFApp\obj\Debug\net6.0-windows\MyStoreWPFApp.genruntimeconfig.cache
 D:\C# workspace\clone\asm1prn221\MyStoreWPFApp\obj\Debug\net6.0-windows\ref\MyStoreWPFApp.dll
 D:\C# workspace\clone\asm1prn221\MyStoreWPFApp\obj\Debug\net6.0-windows\App.baml
+D:\C# workspace\clone\asm1prn221\MyStoreWPFApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Binder.dll
