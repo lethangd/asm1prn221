@@ -1,0 +1,4 @@
+# Ignore bin/Debug and obj/Debug folders in all subdirectories
+**/bin/Debug/
+**/obj/Debug/
+.vs

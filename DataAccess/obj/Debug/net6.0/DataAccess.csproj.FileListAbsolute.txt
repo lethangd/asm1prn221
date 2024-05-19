@@ -44,3 +44,18 @@ D:\C# workspace\clone\asm1prn221\DataAccess\obj\Debug\net6.0\DataAccess.dll
 D:\C# workspace\clone\asm1prn221\DataAccess\obj\Debug\net6.0\refint\DataAccess.dll
 D:\C# workspace\clone\asm1prn221\DataAccess\obj\Debug\net6.0\DataAccess.pdb
 D:\C# workspace\clone\asm1prn221\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll
+D:\Uni\PRN221\asm1prn221\DataAccess\bin\Debug\net6.0\DataAccess.deps.json
+D:\Uni\PRN221\asm1prn221\DataAccess\bin\Debug\net6.0\DataAccess.dll
+D:\Uni\PRN221\asm1prn221\DataAccess\bin\Debug\net6.0\DataAccess.pdb
+D:\Uni\PRN221\asm1prn221\DataAccess\bin\Debug\net6.0\BusinessObject.dll
+D:\Uni\PRN221\asm1prn221\DataAccess\bin\Debug\net6.0\BusinessObject.pdb
+D:\Uni\PRN221\asm1prn221\DataAccess\obj\Debug\net6.0\DataAccess.csproj.AssemblyReference.cache
+D:\Uni\PRN221\asm1prn221\DataAccess\obj\Debug\net6.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Uni\PRN221\asm1prn221\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfoInputs.cache
+D:\Uni\PRN221\asm1prn221\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfo.cs
+D:\Uni\PRN221\asm1prn221\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CoreCompileInputs.cache
+D:\Uni\PRN221\asm1prn221\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CopyComplete
+D:\Uni\PRN221\asm1prn221\DataAccess\obj\Debug\net6.0\DataAccess.dll
+D:\Uni\PRN221\asm1prn221\DataAccess\obj\Debug\net6.0\refint\DataAccess.dll
+D:\Uni\PRN221\asm1prn221\DataAccess\obj\Debug\net6.0\DataAccess.pdb
+D:\Uni\PRN221\asm1prn221\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll

@@ -73,7 +73,7 @@ HorizontalContentAlignment="Left">
 HorizontalContentAlignment="Left">
                             <WrapPanel Width="Auto" Margin="10,0">
                                 <Image Source="{StaticResource LogIcon}" Width="20" Height="20"/>
-                                <TextBlock FontWeight="DemiBold" Text="Log Out" Margin="10" Width="Auto"/>
+                                <TextBlock FontWeight="DemiBold" Text="Log Out" Margin="10" Width="Auto" />
                             </WrapPanel>
                         </Button>
                     </StackPanel>

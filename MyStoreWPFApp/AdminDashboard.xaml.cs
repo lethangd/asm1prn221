@@ -44,8 +44,12 @@ namespace MyStoreWPFApp
 			MainFrame.Navigate(new StaffPage());
 		}
 
-		private void LogoutButton_Click(object sender, RoutedEventArgs e)
-		{
-		}
-	}
+        private void LogoutButton_Click(object sender, RoutedEventArgs e)
+        {
+            var loginWindow = new MainWindow();
+            loginWindow.Show();
+            this.Close();
+        }
+
+    }
 }
