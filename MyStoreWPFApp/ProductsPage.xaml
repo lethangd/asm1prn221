@@ -9,6 +9,72 @@
       Title="ProductsPage">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Background="LightBlue">
+            <Label Content="List of Products" FontSize="20" FontWeight="Bold"></Label>
+
+            <StackPanel Orientation="Horizontal">
+                <Label>Search Product Name :</Label>
+                <ComboBox x:Name="cbProductName" Width="200" HorizontalAlignment="Left" SelectionChanged="cbProductName_SelectionChanged"  >
+
+
+                </ComboBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Label>Search UnitPrice:</Label>
+                <ComboBox x:Name="cbSearchUnitPrice" Width="200" HorizontalAlignment="Left" SelectionChanged="cbSearchUnitPrice_SelectionChanged"   />
+            </StackPanel>
+
+
+
+            <Label Content="ProductId:"></Label>
+            <TextBox  IsEnabled="False" x:Name="txtProductId" 
+                     Text="{Binding Path=ProductId, Mode=OneWay}"
+                     DataContext="{Binding ElementName=lsProduct, Path=SelectedItem}"></TextBox>
+
+
+            <Label Content="ProductName:"></Label>
+            <TextBox x:Name="txtProductName"
+                     Text="{Binding Path=ProductName, Mode=OneWay}"
+                     DataContext="{Binding ElementName=lsProduct, Path=SelectedItem}"></TextBox>
+
+
+            <Label Content="CategoryId:"></Label>
+            <ComboBox x:Name="cbCategoryId"
+         Text="{Binding Path=CategoryId, Mode=OneWay}"
+         DataContext="{Binding ElementName=lsProduct,Path=SelectedItem}" ></ComboBox>
+
+
+
+            <Label Content="UnitPrice:"></Label>
+            <TextBox x:Name="txtUnitPrice"
+         Text="{Binding Path=UnitPrice, Mode=OneWay}"
+         DataContext="{Binding ElementName=lsProduct, Path=SelectedItem}"></TextBox>
+
+
+
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="30">
+                <Button Name="btnAdd" Content="Add" Width="100" Click="btnAdd_Click"></Button>
+                <Button Name="btnEdit" Content="Edit" Width="100" Click="btnEdit_Click"></Button>
+                <Button Name="btnDelete" Content="Delete" Width="100" Click="btnDelete_Click"></Button>
+                <Button Name="btnRefresh" Content="Refresh" Width="100" Click="btnRefresh_Click" ></Button>
+            </StackPanel>
+
+        </StackPanel>
+        <ListView Grid.Row="1" Name="lsProduct">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="100" Header="Product Id" DisplayMemberBinding="{Binding Path=ProductId}"></GridViewColumn>
+                    <GridViewColumn Width="100" Header="Product Name" DisplayMemberBinding="{Binding Path=ProductName}"></GridViewColumn>
+                    <GridViewColumn Width="100" Header="Category Id" DisplayMemberBinding="{Binding Path=CategoryId}"></GridViewColumn>
+                    <GridViewColumn Width="100" Header="UnitPrice" DisplayMemberBinding="{Binding Path=UnitPrice}"></GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
     </Grid>
 </Page>

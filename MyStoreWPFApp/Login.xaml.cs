@@ -1,4 +1,6 @@
 ﻿using BusinessObject;
+using BusinessObject.Models;
+using DataAccess.Repository;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -21,5 +23,9 @@ namespace MyStoreWPFApp
         {
             InitializeComponent();
         }
-    }
+
+		private void NavigateToHome(object sender, RoutedEventArgs e)
+		{
+		}
+	}
 }

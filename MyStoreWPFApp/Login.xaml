@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:MyStoreWPFApp"
         mc:Ignorable="d"
         Background="Transparent"
-        Title="MainWindow" Height="600" Width="400">
+        Title="Login" Height="600" Width="400">
     <Window.Resources>
         <BitmapImage x:Key="LogoIcon" UriSource="Images/logo.png"/>
         
