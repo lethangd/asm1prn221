@@ -8,6 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MyStoreWPFApp
-build_property.ProjectDir = E:\PRN221_huongNT7\ass1\asm1prn221\MyStoreWPFApp\
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.ProjectDir = D:\C# workspace\clone\asm1prn221\MyStoreWPFApp\

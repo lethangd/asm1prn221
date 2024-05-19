@@ -2,6 +2,11 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
     <Compile Update="AdminDashboard.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -29,6 +34,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="HomePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Login.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="OrderDetailWindow.xaml">

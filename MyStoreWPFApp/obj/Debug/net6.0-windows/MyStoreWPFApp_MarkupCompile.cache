@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\PRN221_huongNT7\ass1\asm1prn221\MyStoreWPFApp\obj\Debug\net6.0-windows\
+D:\C# workspace\clone\asm1prn221\MyStoreWPFApp\obj\Debug\net6.0-windows\
 MyStoreWPFApp
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-E:\PRN221_huongNT7\ass1\asm1prn221\MyStoreWPFApp\App.xaml
+D:\C# workspace\clone\asm1prn221\MyStoreWPFApp\App.xaml
 8978853950
 
 11-2069401975
-222419642794
+222-669971735
 AdminDashboard.xaml;HomePage.xaml;Login.xaml;OrderDetailWindow.xaml;OrdersPage.xaml;ProductsPage.xaml;StaffDashboard.xaml;StaffPage.xaml;
 
-False
+True
 
