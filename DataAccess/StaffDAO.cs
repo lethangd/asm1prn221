@@ -41,6 +41,19 @@ namespace DataAccess
 			return Staff;
 		}
 
+		public Staff GetStaffById(int id)
+		{
+			var Staff = new Staff();
+			try
+			{
+				Staff = _storeContext.Staffs.FirstOrDefault(s => s.StaffId==id);
+			}
+			catch (Exception ex)
+			{
+				throw new Exception(ex.Message);
+			}
+			return Staff;
+		}
 
 	}
 }

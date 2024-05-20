@@ -1,5 +1,5 @@
 ﻿MyStoreWPFApp
-1.0.0.0
+
 
 winexe
 C#
@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\C# workspace\clone\asm1prn221\MyStoreWPFApp\App.xaml
 10-307647516
 
-1517984300
+13-714339720
 223-1572270403
 AdminDashboard.xaml;HomePage.xaml;Login.xaml;OrderDetailWindow.xaml;OrdersPage.xaml;ProductsPage.xaml;ProfileView.xaml;StaffDashboard.xaml;StaffPage.xaml;UpdateProfilePage.xaml;
 
-True
+False
 

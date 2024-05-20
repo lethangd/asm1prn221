@@ -141,7 +141,7 @@ namespace MyStoreWPFApp {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/MyStoreWPFApp;V1.0.0.0;component/productspage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/MyStoreWPFApp;component/productspage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\ProductsPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

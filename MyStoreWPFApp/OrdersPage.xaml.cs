@@ -1,4 +1,5 @@
 ﻿using BusinessObject.Models;
+using DataAccess;
 using DataAccess.Repository;
 using System;
 using System.Collections.Generic;
@@ -26,10 +27,12 @@ namespace MyStoreWPFApp
 		public int StaffID { get; set; }
 		public IOrderRepository orderRepository = new OrderRepository();
 		public IOrderDetailRepository orderDetailRepository = new OrderDetailRepository();
-		public OrdersPage(int StaffID)
+		public OrdersPage(int staffID)
 		{
 			InitializeComponent();
-			if(StaffID == 0)
+			StaffID = staffID;
+			Staff staff = StaffDAO.Instance.GetStaffById(StaffID);
+			if(StaffID == 0 || staff.Role==0)
 			{
 				OrdersDataGrid.ItemsSource = orderRepository.GetOrders();
 			}
@@ -43,7 +46,8 @@ namespace MyStoreWPFApp
 		{
 			DateTime startDate = StartDatePicker.SelectedDate ?? DateTime.MinValue;
 			DateTime endDate = EndDatePicker.SelectedDate ?? DateTime.MaxValue;
-			if (StaffID == 0)
+			Staff staff = StaffDAO.Instance.GetStaffById(StaffID);
+			if (StaffID == 0 || staff.Role == 0)
 			{
 				OrdersDataGrid.ItemsSource = orderRepository.GetOrdersByDate(startDate, endDate);
 			}

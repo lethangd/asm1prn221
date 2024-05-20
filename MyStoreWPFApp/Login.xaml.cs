@@ -42,7 +42,7 @@ namespace MyStoreWPFApp
 			{
 				if (acc.Name.Equals(username) && acc.Password.Equals(password))
 				{
-					AdminDashboard adminDashboard = new AdminDashboard();
+					AdminDashboard adminDashboard = new AdminDashboard { Staff = acc };
 					adminDashboard.Show();
 					this.Hide();
 					return;
@@ -60,7 +60,7 @@ namespace MyStoreWPFApp
 			}
 			else if (staff != null && staff.Role == 0)
 			{
-				AdminDashboard adminDashboard = new AdminDashboard();
+				AdminDashboard adminDashboard = new AdminDashboard{ Staff = staff };
 				adminDashboard.Show();
 				this.Hide();
 			}

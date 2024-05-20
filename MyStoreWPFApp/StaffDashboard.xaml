@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MyStoreWPFApp"
         mc:Ignorable="d"
-        Title="StaffDashboard" Height="450" Width="1000"
+        Title="StaffDashboard" Height="650" Width="1000"
         Background="Transparent">
     <Grid>
         <Grid.ColumnDefinitions>

@@ -2458,11 +2458,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\freelance\\asm1prn221\\BusinessObject\\BusinessObject.csproj",
+      "projectUniqueName": "D:\\C# workspace\\clone\\asm1prn221\\BusinessObject\\BusinessObject.csproj",
       "projectName": "BusinessObject",
-      "projectPath": "D:\\freelance\\asm1prn221\\BusinessObject\\BusinessObject.csproj",
+      "projectPath": "D:\\C# workspace\\clone\\asm1prn221\\BusinessObject\\BusinessObject.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\freelance\\asm1prn221\\BusinessObject\\obj\\",
+      "outputPath": "D:\\C# workspace\\clone\\asm1prn221\\BusinessObject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

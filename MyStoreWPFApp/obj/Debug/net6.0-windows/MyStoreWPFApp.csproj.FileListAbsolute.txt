@@ -245,3 +245,9 @@ D:\Uni\PRN221\asm1prn221\MyStoreWPFApp\obj\Debug\net6.0-windows\MyStoreWPFApp.ge
 D:\Uni\PRN221\asm1prn221\MyStoreWPFApp\obj\Debug\net6.0-windows\ref\MyStoreWPFApp.dll
 D:\Uni\PRN221\asm1prn221\MyStoreWPFApp\obj\Debug\net6.0-windows\ProfileView.baml
 D:\Uni\PRN221\asm1prn221\MyStoreWPFApp\obj\Debug\net6.0-windows\ProfileView.g.cs
+D:\Uni\PRN221\asm1prn221\MyStoreWPFApp\obj\Debug\net6.0-windows\UpdateProfilePage.baml
+D:\Uni\PRN221\asm1prn221\MyStoreWPFApp\obj\Debug\net6.0-windows\UpdateProfilePage.g.cs
+D:\C# workspace\clone\asm1prn221\MyStoreWPFApp\obj\Debug\net6.0-windows\ProfileView.baml
+D:\C# workspace\clone\asm1prn221\MyStoreWPFApp\obj\Debug\net6.0-windows\UpdateProfilePage.baml
+D:\C# workspace\clone\asm1prn221\MyStoreWPFApp\obj\Debug\net6.0-windows\ProfileView.g.cs
+D:\C# workspace\clone\asm1prn221\MyStoreWPFApp\obj\Debug\net6.0-windows\UpdateProfilePage.g.cs
