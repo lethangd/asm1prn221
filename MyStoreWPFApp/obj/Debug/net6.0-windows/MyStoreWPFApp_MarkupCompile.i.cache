@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\Uni\PRN221\asm1prn221\MyStoreWPFApp\App.xaml
-91999436536
+10-307647516
 
-14-872962894
+1517984300
 223-1979283232
-AdminDashboard.xaml;HomePage.xaml;Login.xaml;OrderDetailWindow.xaml;OrdersPage.xaml;ProductsPage.xaml;ProfileView.xaml;StaffDashboard.xaml;StaffPage.xaml;
+AdminDashboard.xaml;HomePage.xaml;Login.xaml;OrderDetailWindow.xaml;OrdersPage.xaml;ProductsPage.xaml;ProfileView.xaml;StaffDashboard.xaml;StaffPage.xaml;UpdateProfilePage.xaml;
 
 True
 
