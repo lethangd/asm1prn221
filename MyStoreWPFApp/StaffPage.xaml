@@ -9,6 +9,51 @@
       Title="StaffPage">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Background="LightBlue">
+            <Label Content="List of staff" FontSize="20" FontWeight="Bold"></Label>
+            <Label Content="Staff name: "></Label>
+            <TextBox x:Name="txtStaffName"
+                     Text="{Binding Path=Name, Mode=OneWay}"
+                     DataContext="{Binding ElementName=lsStaff, Path=SelectedItem}"></TextBox>
+            <Label Content="Password: "></Label>
+            <TextBox x:Name="txtStaffPassword"
+                    Text="{Binding Path=Password, Mode=OneWay}"
+                     DataContext="{Binding ElementName=lsStaff, Path=SelectedItem}"></TextBox>
+            <Label Content="Role: "></Label>
+            <StackPanel Orientation="Horizontal" >
+                <ComboBox x:Name="cbRole"
+                          Text="{Binding Path=Role, Mode=OneWay}"
+                          DataContext="{Binding ElementName=lsStaff,Path=SelectedItem}"
+                          Width="300"
+                          HorizontalAlignment="Left">
+                </ComboBox>
+                <TextBlock Width="100" Visibility="Visible"></TextBlock>
+                <StackPanel Orientation="Horizontal" >
+                    <TextBox x:Name="txtSearch" Width="200"></TextBox>
+                    <Button Name="btnSearch" Content="Search" Width="100" Click="btnSearch_Click" ></Button>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+                <Button Name="btnAdd" Content="Add" Width="100" Click="btnAdd_Click"></Button>
+                <Button Name="btnEdit" Content="Edit" Width="100" Click="btnEdit_Click"></Button>
+                <Button Name="btnDelete" Content="Delete" Width="100" Click="btnDelete_Click"></Button>
+                <Button Name="btnRefresh" Content="Refresh" Width="100" Click="btnRefresh_Click"></Button>
+            </StackPanel>
+        </StackPanel>
+        <ListView Grid.Row="1" Name="lsStaff" >
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="100" Header="Staff Id" DisplayMemberBinding="{Binding Path=StaffId}"></GridViewColumn>
+                    <GridViewColumn Width="100" Header="Name" DisplayMemberBinding="{Binding Path=Name}"></GridViewColumn>
+                    <GridViewColumn Width="100" Header="Password" DisplayMemberBinding="{Binding Path=Password}"></GridViewColumn>
+                    <GridViewColumn Width="100" Header="Role" DisplayMemberBinding="{Binding Path=Role}"></GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
     </Grid>
+
 </Page>
