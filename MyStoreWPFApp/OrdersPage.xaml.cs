@@ -65,5 +65,10 @@ namespace MyStoreWPFApp
 				orderDetailWindow.Show();
 			}
 		}
-	}
+
+        private void AdminButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+    }
 }

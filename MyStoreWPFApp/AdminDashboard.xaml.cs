@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessObject.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,10 +20,11 @@ namespace MyStoreWPFApp
 	/// </summary>
 	public partial class AdminDashboard : Window
 	{
-		public AdminDashboard()
+        public Staff Staff { get; set; }
+        public AdminDashboard()
 		{
 			InitializeComponent();
-			MainFrame.Navigate(new HomePage());
+            MainFrame.Navigate(new HomePage());
 		}
 		private void NavigateToHome(object sender, RoutedEventArgs e)
 		{
@@ -44,8 +46,18 @@ namespace MyStoreWPFApp
 			MainFrame.Navigate(new StaffPage());
 		}
 
-		private void LogoutButton_Click(object sender, RoutedEventArgs e)
-		{
-		}
-	}
+        private void NavigateToProfile(object sender, RoutedEventArgs e)
+        {
+            var profileView = new UpdateProfilePage(Staff);
+            profileView.Show();
+        }
+
+        private void LogoutButton_Click(object sender, RoutedEventArgs e)
+        {
+            var loginWindow = new MainWindow();
+            loginWindow.Show();
+            this.Close();
+        }
+
+    }
 }

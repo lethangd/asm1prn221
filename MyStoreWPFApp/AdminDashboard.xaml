@@ -60,7 +60,7 @@
                                 <TextBlock FontWeight="DemiBold" Text="Manage Staffs" Margin="10" Width="Auto"/>
                             </WrapPanel>
                         </Button>
-                        <Button Style="{DynamicResource btnNavigation}" Click="NavigateToStaff" BorderThickness="0" Background="Transparent"
+                        <Button Style="{DynamicResource btnNavigation}" Click="NavigateToProfile" BorderThickness="0" Background="Transparent"
 HorizontalContentAlignment="Left">
                             <WrapPanel Width="Auto" Margin="10,0">
                                 <Image Source="{StaticResource UserIcon}" Width="20" Height="20"/>
