@@ -41,3 +41,17 @@ D:\C# workspace\clone\asm1prn221\BusinessObject\obj\Debug\net6.0\refint\Business
 D:\C# workspace\clone\asm1prn221\BusinessObject\obj\Debug\net6.0\BusinessObject.pdb
 D:\C# workspace\clone\asm1prn221\BusinessObject\obj\Debug\net6.0\BusinessObject.genruntimeconfig.cache
 D:\C# workspace\clone\asm1prn221\BusinessObject\obj\Debug\net6.0\ref\BusinessObject.dll
+D:\Uni\PRN221\asm1prn221\BusinessObject\bin\Debug\net6.0\BusinessObject.deps.json
+D:\Uni\PRN221\asm1prn221\BusinessObject\bin\Debug\net6.0\BusinessObject.runtimeconfig.json
+D:\Uni\PRN221\asm1prn221\BusinessObject\bin\Debug\net6.0\BusinessObject.dll
+D:\Uni\PRN221\asm1prn221\BusinessObject\bin\Debug\net6.0\BusinessObject.pdb
+D:\Uni\PRN221\asm1prn221\BusinessObject\obj\Debug\net6.0\BusinessObject.csproj.AssemblyReference.cache
+D:\Uni\PRN221\asm1prn221\BusinessObject\obj\Debug\net6.0\BusinessObject.GeneratedMSBuildEditorConfig.editorconfig
+D:\Uni\PRN221\asm1prn221\BusinessObject\obj\Debug\net6.0\BusinessObject.AssemblyInfoInputs.cache
+D:\Uni\PRN221\asm1prn221\BusinessObject\obj\Debug\net6.0\BusinessObject.AssemblyInfo.cs
+D:\Uni\PRN221\asm1prn221\BusinessObject\obj\Debug\net6.0\BusinessObject.csproj.CoreCompileInputs.cache
+D:\Uni\PRN221\asm1prn221\BusinessObject\obj\Debug\net6.0\BusinessObject.dll
+D:\Uni\PRN221\asm1prn221\BusinessObject\obj\Debug\net6.0\refint\BusinessObject.dll
+D:\Uni\PRN221\asm1prn221\BusinessObject\obj\Debug\net6.0\BusinessObject.pdb
+D:\Uni\PRN221\asm1prn221\BusinessObject\obj\Debug\net6.0\BusinessObject.genruntimeconfig.cache
+D:\Uni\PRN221\asm1prn221\BusinessObject\obj\Debug\net6.0\ref\BusinessObject.dll

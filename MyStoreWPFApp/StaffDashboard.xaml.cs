@@ -42,8 +42,17 @@ namespace MyStoreWPFApp
 			MainFrame.Navigate(new OrdersPage(Staff.StaffId));
 		}
 
-		private void LogoutButton_Click(object sender, RoutedEventArgs e)
-		{
-		}
-	}
+        private void LogoutButton_Click(object sender, RoutedEventArgs e)
+        {
+            var loginWindow = new MainWindow();
+            loginWindow.Show();
+            this.Close();
+        }
+
+        private void NavigateToProfile(object sender, RoutedEventArgs e)
+        {
+            var profileView = new ProfileView(Staff);
+            profileView.Show();
+        }
+    }
 }
