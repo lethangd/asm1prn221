@@ -161,3 +161,30 @@ D:\C# workspace\clone\asm1prn221\MyStoreWPFApp\obj\Debug\net6.0-windows\MyStoreW
 D:\C# workspace\clone\asm1prn221\MyStoreWPFApp\obj\Debug\net6.0-windows\ref\MyStoreWPFApp.dll
 D:\C# workspace\clone\asm1prn221\MyStoreWPFApp\obj\Debug\net6.0-windows\App.baml
 D:\C# workspace\clone\asm1prn221\MyStoreWPFApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Binder.dll
+E:\asm1prn221\MyStoreWPFApp\bin\Debug\net6.0-windows\MyStoreWPFApp.exe
+E:\asm1prn221\MyStoreWPFApp\bin\Debug\net6.0-windows\MyStoreWPFApp.dll
+E:\asm1prn221\MyStoreWPFApp\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
+E:\asm1prn221\MyStoreWPFApp\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\asm1prn221\MyStoreWPFApp\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+E:\asm1prn221\MyStoreWPFApp\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\asm1prn221\MyStoreWPFApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+E:\asm1prn221\MyStoreWPFApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
+E:\asm1prn221\MyStoreWPFApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.dll
+E:\asm1prn221\MyStoreWPFApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\asm1prn221\MyStoreWPFApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Binder.dll
+E:\asm1prn221\MyStoreWPFApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+E:\asm1prn221\MyStoreWPFApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Json.dll
+E:\asm1prn221\MyStoreWPFApp\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+E:\asm1prn221\MyStoreWPFApp\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\asm1prn221\MyStoreWPFApp\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+E:\asm1prn221\MyStoreWPFApp\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+E:\asm1prn221\MyStoreWPFApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+E:\asm1prn221\MyStoreWPFApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+E:\asm1prn221\MyStoreWPFApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+E:\asm1prn221\MyStoreWPFApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+E:\asm1prn221\MyStoreWPFApp\bin\Debug\net6.0-windows\Microsoft.Identity.Client.dll
+E:\asm1prn221\MyStoreWPFApp\bin\Debug\net6.0-windows\System.Text.Json.dll
+E:\asm1prn221\MyStoreWPFApp\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\asm1prn221\MyStoreWPFApp\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\asm1prn221\MyStoreWPFApp\bin\Debug\net6.0-windows\BusinessObject.dll
+E:\asm1prn221\MyStoreWPFApp\bin\Debug\net6.0-windows\DataAccess.dll

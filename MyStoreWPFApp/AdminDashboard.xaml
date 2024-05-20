@@ -39,7 +39,7 @@
                                 <TextBlock FontWeight="DemiBold" Text="Home" Margin="10" Width="Auto"/>
                             </WrapPanel>
                         </Button>
-                        <Button Style="{DynamicResource btnNavigation}" Click="NavigateToProducts" BorderThickness="0" Background="Transparent"
+                        <Button x:Name="ManageProductsButton" Style="{DynamicResource btnNavigation}" Click="NavigateToProducts" BorderThickness="0" Background="Transparent"
     HorizontalContentAlignment="Left">
                             <WrapPanel Width="Auto" Margin="10,0">
                                 <Image Source="{StaticResource ProductIcon}" Width="20" Height="20"/>
@@ -53,7 +53,7 @@
                                 <TextBlock FontWeight="DemiBold" Text="Manage Orders" Margin="10" Width="Auto"/>
                             </WrapPanel>
                         </Button>
-                        <Button Style="{DynamicResource btnNavigation}" Click="NavigateToStaff" BorderThickness="0" Background="Transparent"
+                        <Button x:Name="ManageOrdersButton" Style="{DynamicResource btnNavigation}" Click="NavigateToStaff" BorderThickness="0" Background="Transparent"
     HorizontalContentAlignment="Left">
                             <WrapPanel Width="Auto" Margin="10,0">
                                 <Image Source="{StaticResource MemberIcon}" Width="20" Height="20"/>

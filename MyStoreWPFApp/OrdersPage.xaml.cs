@@ -31,15 +31,19 @@ namespace MyStoreWPFApp
 			InitializeComponent();
 			if(StaffID == 0)
 			{
-				OrdersDataGrid.ItemsSource = orderRepository.GetOrders();
+                ActionGridStaff.Visibility = Visibility.Collapsed;
+
+                OrdersDataGrid.ItemsSource = orderRepository.GetOrders();
 			}
 			else
 			{
-				OrdersDataGrid.ItemsSource = orderRepository.GetOrdersByStaffID(StaffID);
+                ActionGrid.Visibility = Visibility.Collapsed;
+
+                OrdersDataGrid.ItemsSource = orderRepository.GetOrdersByStaffID(StaffID);
 			}
 		}
 
-		private void SearchOrders_Click(object sender, RoutedEventArgs e)
+        private void SearchOrders_Click(object sender, RoutedEventArgs e)
 		{
 			DateTime startDate = StartDatePicker.SelectedDate ?? DateTime.MinValue;
 			DateTime endDate = EndDatePicker.SelectedDate ?? DateTime.MaxValue;
