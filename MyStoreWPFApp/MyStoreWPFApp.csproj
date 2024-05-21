@@ -66,4 +66,10 @@
     </Resource>
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="ReportOrdersPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
 </Project>

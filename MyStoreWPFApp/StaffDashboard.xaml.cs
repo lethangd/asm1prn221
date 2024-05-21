@@ -41,8 +41,12 @@ namespace MyStoreWPFApp
 		{
 			MainFrame.Navigate(new OrdersPage(Staff.StaffId));
 		}
+		private void NavigateToReportOrders(object sender, RoutedEventArgs e)
+		{
+			MainFrame.Navigate(new ReportOrdersPage(Staff.StaffId));
+		}
 
-        private void LogoutButton_Click(object sender, RoutedEventArgs e)
+		private void LogoutButton_Click(object sender, RoutedEventArgs e)
         {
             var loginWindow = new MainWindow();
             loginWindow.Show();

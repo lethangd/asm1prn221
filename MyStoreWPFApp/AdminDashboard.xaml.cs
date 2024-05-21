@@ -41,6 +41,11 @@ namespace MyStoreWPFApp
 			MainFrame.Navigate(new OrdersPage(0));
 		}
 
+		private void NavigateToReportOrders(object sender, RoutedEventArgs e)
+		{
+			MainFrame.Navigate(new ReportOrdersPage(0));
+		}
+
 		private void NavigateToStaff(object sender, RoutedEventArgs e)
 		{
 			MainFrame.Navigate(new StaffPage());

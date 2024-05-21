@@ -40,6 +40,9 @@
     <Page Update="OrderDetailWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="ReportOrdersPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="OrdersPage.xaml">
       <SubType>Designer</SubType>
     </Page>

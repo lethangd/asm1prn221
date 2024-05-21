@@ -60,6 +60,14 @@
                                 <TextBlock FontWeight="DemiBold" Text="Manage Staffs" Margin="10" Width="Auto"/>
                             </WrapPanel>
                         </Button>
+                        <Button Style="{DynamicResource btnNavigation}" Click="NavigateToReportOrders" BorderThickness="0" Background="Transparent"
+    HorizontalContentAlignment="Left">
+                            <WrapPanel Width="Auto" Margin="10,0">
+                                <Image Source="{StaticResource OrderIcon}" Width="20" Height="20"/>
+                                <TextBlock FontWeight="DemiBold" Text="Report Orders" Margin="10" Width="Auto"/>
+                            </WrapPanel>
+                        </Button>
+
                         <Button Style="{DynamicResource btnNavigation}" Click="NavigateToProfile" BorderThickness="0" Background="Transparent"
 HorizontalContentAlignment="Left">
                             <WrapPanel Width="Auto" Margin="10,0">

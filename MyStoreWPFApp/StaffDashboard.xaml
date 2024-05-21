@@ -26,6 +26,7 @@
             </Button>
             <Button Content="Manage Products" Margin="10" Click="NavigateToProducts"/>
             <Button Content="Manage Orders"  Margin="10" Click="NavigateToOrders"/>
+            <Button Content="Report Orders"  Margin="10" Click="NavigateToReportOrders"/>
             <Button Content="Profile" Margin="10" Click="NavigateToProfile"/>
             <Button Content="Logout" Margin="10" Click="LogoutButton_Click"/>
         </StackPanel>
