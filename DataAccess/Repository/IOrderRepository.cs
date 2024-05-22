@@ -1,4 +1,4 @@
-﻿using BusinessObject.Models;
+﻿using BusinessObject;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,9 +14,11 @@ namespace DataAccess.Repository
 		void InsertOrder(Order Order);
 		void DeleteOrder(int OrderId);
 		void UpdateOrder(Order Order);
+		void RemoveOrder(int OrderId);
 		IEnumerable<Order> GetOrdersByStaffID(int id);
 		IEnumerable<Order> GetOrdersByDate(DateTime startDate, DateTime endDate);
 
 		IEnumerable<Order> GetOrdersByDateAndStaffID(DateTime startDate, DateTime endDate, int staffId);
+		Order GetLastOrderID();
 	}
 }

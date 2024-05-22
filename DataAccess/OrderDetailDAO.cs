@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BusinessObject.Models;
+using BusinessObject;
 using Microsoft.EntityFrameworkCore;
 
 namespace DataAccess
@@ -40,6 +40,7 @@ namespace DataAccess
                 throw new Exception(ex.Message);
             }
             return OrderDetails;
+
         }
 
 		public IEnumerable<OrderDetail> GetOrderDetailsByOrderID(int id)
@@ -77,7 +78,7 @@ namespace DataAccess
         {
             try
             {
-                if (GetOrderDetailById(OrderDetail.OrderId) == null)
+                if (GetOrderDetailById(OrderDetail.OrderDetailId) == null)
                 {
                     _storeContext.OrderDetails.Add(OrderDetail);
                     _storeContext.SaveChanges();

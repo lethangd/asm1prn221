@@ -1,4 +1,4 @@
-﻿using BusinessObject.Models;
+﻿using BusinessObject;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.Metrics;
@@ -56,6 +56,12 @@ namespace MyStoreWPFApp
         private void NavigateToProfile(object sender, RoutedEventArgs e)
         {
             var profileView = new ProfileView(Staff);
+            profileView.Show();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var profileView = new UpdateProfilePage(Staff);
             profileView.Show();
         }
     }

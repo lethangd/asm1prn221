@@ -1,4 +1,4 @@
-﻿using BusinessObject.Models;
+﻿using BusinessObject;
 using DataAccess;
 using DataAccess.Repository;
 using System;

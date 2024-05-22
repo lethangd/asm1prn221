@@ -6,11 +6,13 @@
         xmlns:local="clr-namespace:MyStoreWPFApp"
         mc:Ignorable="d"
         Background="Transparent"
-        Title="Login" Height="600" Width="400">
+        Title="Login" Height="600" Width="400"
+        WindowStartupLocation="CenterScreen">
+
     <Window.Resources>
         <BitmapImage x:Key="LogoIcon" UriSource="Images/logo.png"/>
-        
-        
+
+
         <SolidColorBrush x:Key="TextBox.Static.Border" Color="#FFABAdB3"/>
         <SolidColorBrush x:Key="TextBox.MouseOver.Border" Color="#FF7EB4EA"/>
         <SolidColorBrush x:Key="TextBox.Focus.Border" Color="#FF569DE5"/>
@@ -21,7 +23,7 @@
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type TextBox}">
-                        <Border x:Name="border" CornerRadius="20" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="True">
+                        <Border x:Name="border" Padding="10" CornerRadius="20" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="True">
                             <ScrollViewer x:Name="PART_ContentHost" Focusable="false" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"/>
                         </Border>
                         <ControlTemplate.Triggers>
@@ -48,8 +50,8 @@
                 </MultiTrigger>
             </Style.Triggers>
         </Style>
-        
-        
+
+
         <SolidColorBrush x:Key="TextBox.Static.Border1" Color="#FFABAdB3"/>
         <SolidColorBrush x:Key="TextBox.MouseOver.Border1" Color="#FF7EB4EA"/>
         <SolidColorBrush x:Key="TextBox.Focus.Border1" Color="#FF569DE5"/>
@@ -61,7 +63,7 @@
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type PasswordBox}">
-                        <Border x:Name="border" CornerRadius="20" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="True">
+                        <Border Padding="10" x:Name="border" CornerRadius="20" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="True">
                             <ScrollViewer x:Name="PART_ContentHost" Focusable="false" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"/>
                         </Border>
                         <ControlTemplate.Triggers>
@@ -89,15 +91,24 @@
             </Style.Triggers>
         </Style>
     </Window.Resources>
-    <Grid>
-        <Border Background="White" CornerRadius="20">
-            <StackPanel Margin="10,90">
+    <Grid Background="Transparent">
+        <Border Background="White" >
+            <StackPanel Margin="10,70">
                 <Image Source="{DynamicResource LogoIcon}" Width="100"></Image>
                 <TextBlock Text="Welcome back to MyStore" FontSize="20" FontWeight="Bold" Margin="0,20,0,10" HorizontalAlignment="Center"/>
                 <TextBlock Text="Please login to continue" FontSize="14" HorizontalAlignment="Center"/>
-                <TextBox Tag="Username" Style="{DynamicResource RoundedTextBox}" x:Name="txtUsername" Height="50" FontSize="20" Margin="10" />
-                <PasswordBox Style="{DynamicResource RoundedPasswordBox}" x:Name="txtPassword" Margin="10" Height="50" FontSize="20"/>
-                <Button Style="{DynamicResource btnNavigation}" Click="NavigateToHome" BorderThickness="0" Background="#38c190" Margin="10"
+
+                <StackPanel Orientation="Vertical" Margin="10,10">
+                    <TextBlock Text="Username" Margin="5,0,0,5" FontWeight="DemiBold"/>
+                    <TextBox Style="{DynamicResource RoundedTextBox}" x:Name="txtUsername" VerticalAlignment="Center" Height="50" FontSize="20"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical" Margin="10,0">
+                    <TextBlock Text="Password" Margin="5,0,0,5" FontWeight="DemiBold" />
+                    <PasswordBox Style="{DynamicResource RoundedPasswordBox}" x:Name="txtPassword" Margin="0" Height="50" FontSize="20"/>
+                </StackPanel>
+
+                <Button Style="{DynamicResource btnNavigation}" Click="NavigateToHome" BorderThickness="0" Background="#38c190" Margin="20"
                         HorizontalContentAlignment="Center"
                         Width="180">
                     <WrapPanel Width="Auto" Margin="10,0">

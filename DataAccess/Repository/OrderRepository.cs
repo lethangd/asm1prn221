@@ -1,4 +1,4 @@
-﻿using BusinessObject.Models;
+﻿using BusinessObject;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -48,6 +48,13 @@ namespace DataAccess.Repository
 		{
 			return OrderDAO.Instance.GetOrdersByDateAndStaffID(startDate, endDate, staffId);
 		}
-
+		public void RemoveOrder(int OrderId)
+		{
+            OrderDAO.Instance.RemoveOrder(OrderId);
+        }
+		public Order GetLastOrderID()
+		{
+            return OrderDAO.Instance.GetLastOrder();
+        }
 	}
 }

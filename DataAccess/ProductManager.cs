@@ -1,4 +1,4 @@
-﻿using BusinessObject.Models;
+﻿using BusinessObject;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,5 +33,47 @@ namespace DataAccess
             }
             return listP;
         }
+        //get all product names & ids
+        public  List<Product> getAllProductName()
+        {
+            List<Product> listP;
+            using (var context = new MyStoreContext())
+            {
+                listP = context.Products
+                    .Select(p => new Product { ProductId = p.ProductId, ProductName = p.ProductName })
+                    .ToList();
+            }
+            return listP;
+        }
+
+        //get all string product name
+        public List<string> getAllStringProductName()
+        {
+            List<string> listP;
+            using (var context = new MyStoreContext())
+            {
+                listP = context.Products
+                    .Select(p => p.ProductName)
+                    .ToList();
+            }
+            return listP;
+        }
+        //find product name by id
+        public string findProductNameById(int id)
+        {
+            string name;
+            using (var context = new MyStoreContext())
+            {
+                name = context.Products
+                    .Where(p => p.ProductId == id)
+                    .Select(p => p.ProductName)
+                    .FirstOrDefault();
+            }
+            return name;
+        }
+
+
+
+
     }
 }

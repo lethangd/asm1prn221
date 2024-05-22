@@ -14,6 +14,12 @@
     <Compile Update="OrdersPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="OrderView\AddOrder.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="OrderView\EditOrder.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="ProductsPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -38,6 +44,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="OrderDetailWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="OrderView\AddOrder.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="OrderView\EditOrder.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ReportOrdersPage.xaml">

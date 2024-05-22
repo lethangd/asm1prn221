@@ -1,4 +1,4 @@
-﻿using BusinessObject.Models;
+﻿using BusinessObject;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -150,6 +150,19 @@ namespace DataAccess
 				throw new Exception(ex.Message);
 			}
 		}
+        //GetLastOrder()
+		public Order GetLastOrder()
+		{
+            try
+			{
+                return _storeContext.Orders.OrderByDescending(o => o.OrderId).FirstOrDefault();
+            }
+            catch (Exception ex)
+			{
+                throw new Exception(ex.Message);
+            }
+            return null;
+        }
 
-	}
+    }
 }
