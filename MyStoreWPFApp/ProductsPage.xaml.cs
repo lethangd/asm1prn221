@@ -29,8 +29,6 @@ namespace MyStoreWPFApp
             InitializeComponent();
             context = new MyStoreContext();
             LoadCategoryIds();
-            LoadProductName();
-            LoadUnitPrices();
             lsProduct.ItemsSource = context.Products.ToList();
         }
 
@@ -40,17 +38,9 @@ namespace MyStoreWPFApp
             cbCategoryId.ItemsSource = categoryIds;
         }
 
-        private void LoadProductName()
-        {
-            List<string> productname = context.Products.Select(c => c.ProductName).Distinct().ToList();
-            cbProductName.ItemsSource = productname;
-        }
 
-        private void LoadUnitPrices()
-        {
-            List<int> unitprice = context.Products.Select(c => c.UnitPrice).Distinct().ToList();
-            cbSearchUnitPrice.ItemsSource = unitprice;
-        }
+
+
 
 
         private void btnAdd_Click(object sender, RoutedEventArgs e)
@@ -62,7 +52,6 @@ namespace MyStoreWPFApp
             {
                 Product product = new Product
                 {
-                    //ProductId = int.Parse(txtProductId.Text),
                     ProductName = txtProductName.Text,
                     CategoryId = int.Parse(cbCategoryId.SelectedValue.ToString()),
                     UnitPrice = int.Parse(txtUnitPrice.Text),
@@ -73,8 +62,6 @@ namespace MyStoreWPFApp
                 context.SaveChanges();
                 MessageBox.Show("Added!");
                 LoadCategoryIds();
-                LoadProductName();
-                LoadUnitPrices();
                 lsProduct.ItemsSource = context.Products.ToList();
             }
             catch (Exception ex)
@@ -99,8 +86,6 @@ namespace MyStoreWPFApp
                 MessageBox.Show("Updated!");
 
                 LoadCategoryIds();
-                LoadProductName();
-                LoadUnitPrices();
                 lsProduct.ItemsSource = context.Products.ToList();
             }
             catch (Exception ex)
@@ -125,8 +110,6 @@ namespace MyStoreWPFApp
                 MessageBox.Show("Remove!");
 
                 LoadCategoryIds();
-                LoadProductName();
-                LoadUnitPrices();
                 lsProduct.ItemsSource = context.Products.ToList();
             }
             catch (Exception ex)
@@ -136,37 +119,11 @@ namespace MyStoreWPFApp
 
         }
 
-        private void cbProductName_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            String productName = (string)cbProductName.SelectedValue;
-            lsProduct.ItemsSource = ProductManager.getListProductByProductName(productName);
-
-
-        }
-
-        private void cbSearchUnitPrice_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-            if (cbSearchUnitPrice.SelectedValue != null)
-            {
-                try
-                {
-                    int unitPrice = int.Parse(cbSearchUnitPrice.SelectedValue.ToString());
-                    lsProduct.ItemsSource = ProductManager.getListProductByUnitPrice(unitPrice);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"Error processing selected unit price: {ex.Message}");
-                }
-            }
-
-        }
 
         private void btnRefresh_Click(object sender, RoutedEventArgs e)
         {
 
-            cbProductName.SelectedIndex = -1;
-            cbSearchUnitPrice.SelectedIndex = -1;
+            txtProductNamesearch.Clear();
             txtProductId.Clear();
             txtProductName.Clear();
             cbCategoryId.SelectedIndex = -1;
@@ -175,6 +132,18 @@ namespace MyStoreWPFApp
 
             lsProduct.ItemsSource = context.Products.ToList();
 
+
+        }
+
+        private void btSearch_Click(object sender, RoutedEventArgs e)
+        {
+            string searchText = txtProductNamesearch.Text.ToLower();
+            var filter = context.Products.Where(p => p.ProductName
+            .ToLower()
+            .Contains(searchText))
+            .OrderBy(p => p.ProductName)
+            .ToList();
+            lsProduct.ItemsSource = filter;
 
         }
     }

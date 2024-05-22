@@ -18,16 +18,14 @@
 
             <StackPanel Orientation="Horizontal">
                 <Label>Search Product Name :</Label>
-                <ComboBox x:Name="cbProductName" Width="200" HorizontalAlignment="Left" SelectionChanged="cbProductName_SelectionChanged"  >
+                <TextBox x:Name="txtProductNamesearch" Width="200" HorizontalAlignment="Left">
 
 
-                </ComboBox>
+                </TextBox>
+
+                <Button x:Name="btSearch" Content="Search" Width="100" Height="25" VerticalAlignment="Top" Click="btSearch_Click"  />
             </StackPanel>
 
-            <StackPanel Orientation="Horizontal">
-                <Label>Search UnitPrice:</Label>
-                <ComboBox x:Name="cbSearchUnitPrice" Width="200" HorizontalAlignment="Left" SelectionChanged="cbSearchUnitPrice_SelectionChanged"   />
-            </StackPanel>
 
 
 

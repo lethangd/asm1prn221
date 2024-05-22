@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\MyStoreWPFApp"
   ],
-  "SelectedNode": "\\Assigment01.sln",
+  "SelectedNode": "\\MyStoreWPFApp\\ProductsPage.xaml.cs",
   "PreviewInSolutionExplorer": false
 }
