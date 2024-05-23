@@ -18,7 +18,7 @@ namespace MyStoreWPFApp
     /// <summary>
     /// Interaction logic for ProfileView.xaml
     /// </summary>
-    public partial class ProfileView : Window
+    public partial class ProfileView : Page
     {
         private Staff _staff;
 

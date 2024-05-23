@@ -258,3 +258,9 @@ C:\Users\hadan\Desktop\asm1prn221\MyStoreWPFApp\obj\Debug\net6.0-windows\MyStore
 C:\Users\hadan\Desktop\asm1prn221\MyStoreWPFApp\obj\Debug\net6.0-windows\ref\MyStoreWPFApp.dll
 C:\Users\hadan\Desktop\asm1prn221\MyStoreWPFApp\obj\Debug\net6.0-windows\OrderView\EditOrder.baml
 C:\Users\hadan\Desktop\asm1prn221\MyStoreWPFApp\obj\Debug\net6.0-windows\OrderView\EditOrder.g.cs
+D:\Uni\PRN221\asm1prn221\MyStoreWPFApp\obj\Debug\net6.0-windows\OrderView\AddOrder.g.cs
+D:\Uni\PRN221\asm1prn221\MyStoreWPFApp\obj\Debug\net6.0-windows\OrderView\EditOrder.g.cs
+D:\Uni\PRN221\asm1prn221\MyStoreWPFApp\obj\Debug\net6.0-windows\ReportOrdersPage.g.cs
+D:\Uni\PRN221\asm1prn221\MyStoreWPFApp\obj\Debug\net6.0-windows\OrderView\AddOrder.baml
+D:\Uni\PRN221\asm1prn221\MyStoreWPFApp\obj\Debug\net6.0-windows\OrderView\EditOrder.baml
+D:\Uni\PRN221\asm1prn221\MyStoreWPFApp\obj\Debug\net6.0-windows\ReportOrdersPage.baml

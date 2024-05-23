@@ -53,8 +53,7 @@ namespace MyStoreWPFApp
 
         private void NavigateToProfile(object sender, RoutedEventArgs e)
         {
-            var profileView = new UpdateProfilePage(Staff);
-            profileView.Show();
+            MainFrame.Navigate(new ProfileView(Staff));
         }
 
         private void LogoutButton_Click(object sender, RoutedEventArgs e)

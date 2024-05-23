@@ -55,14 +55,8 @@ namespace MyStoreWPFApp
 
         private void NavigateToProfile(object sender, RoutedEventArgs e)
         {
-            var profileView = new ProfileView(Staff);
-            profileView.Show();
+            MainFrame.Navigate(new ProfileView(Staff));
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            var profileView = new UpdateProfilePage(Staff);
-            profileView.Show();
-        }
     }
 }
